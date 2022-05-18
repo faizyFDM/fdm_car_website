@@ -10,182 +10,191 @@
 </head>
 
 <body>
-    <header>
+    <header class="title-header">
         <img src="" width="200px" height="100px">
         <h1>
             Website Title
         </h1>
     </header>
-    <aside>
-        <h3>Product Search</h3>
-        <label for="car-make">Make</label>
-        <select name="car-make" id="car-make">
-            <option value="acura">Acura</option>
-            <option value="alfa_romeo">Alfa Romeo</option>
-            <option value="">Aston Martin</option>
-            <option value="">Audi</option>
-            <option value="">Bentley</option>
-            <option value="">BMW</option>
-            <option value="">Bugatti</option>
-            <option value="">Buick</option>
-            <option value="">Cadallic</option>
-            <option value="">Cheverolet</option>
-            <option value="">Chrysler</option>
-            <option value="">Citroen</option>
-            <option value="">Dodge</option>
-            <option value="">Ferrari</option>
-            <option value="">Fiat</option>
-            <option value="">Ford</option>
-            <option value="">GMC</option>
-            <option value="">Honda</option>
-            <option value="">Hyundai</option>
-            <option value="">Infiniti</option>
-            <option value="">Jaguar</option>
-            <option value="">Jeep</option>
-            <option value="">Kia</option>
-            <option value="">Koenigsegg</option>
-            <option value="">Lamborghini</option>
-            <option value="">Land Rover</option>
-            <option value="">Lexus</option>
-            <option value="">Licoln</option>
-            <option value="">Lotus</option>
-            <option value="">Masarati</option>
-            <option value="">Maybach</option>
-            <option value="">Mazda</option>
-            <option value="">McLaren</option>
-            <option value="">Mercedes</option>
-            <option value="">Mini</option>
-            <option value="">Mitsubishi</option>
-            <option value="">Nissan</option>
-            <option value="">Peugeot</option>
-            <option value="">Pontiac</option>
-            <option value="">Porsche</option>
-            <option value="">Ram</option>
-            <option value="">Renault</option>
-            <option value="">Rolls-Royce</option>
-            <option value="">Smart</option>
-            <option value="">Subaru</option>
-            <option value="">Suzuki</option>
-            <option value="">Tesla</option>
-            <option value="">Toyota</option>
-            <option value="">Volkswagen</option>
-            <option value="">Volvo</option>
-        </select>
-        <label for="car-model">Model</label>
-        <select name="car-model" id="car-model">
-            <option value="acura">Acura</option>
-        </select>
-        <label for="car-engine">Engine Size</label>
-        <select name="car-engine" id="car-engine">
-            <option value="acura">Acura</option>
-        </select>
-        <label for="car-price">Price</label>
-        <select name="car-price-min" id="car-price-min">
-            <option value="acura">Acura</option>
-        </select>
-        <select name="car-price-max" id="car-price-max">
-            <option value="acura">Acura</option>
-        </select>
-        <button>Search</button>
-    </aside>
-    <section>
-        <header class="jumbotron">
-            <img src="" width="400px" height="200px"/>
-            <div>
-                <h2>30% Off All Cars!!</h2>
-                <a href="/">Click here now</a>
+    <div class="wrapper">
+        <aside>
+            <h3 id="product-title">Product Search</h3>
+            <label for="car-make">Make</label>
+            <select name="car-make" id="car-make">
+                <option value="acura">Acura</option>
+                <option value="alfa_romeo">Alfa Romeo</option>
+                <option value="">Aston Martin</option>
+                <option value="">Audi</option>
+                <option value="">Bentley</option>
+                <option value="">BMW</option>
+                <option value="">Bugatti</option>
+                <option value="">Buick</option>
+                <option value="">Cadallic</option>
+                <option value="">Cheverolet</option>
+                <option value="">Chrysler</option>
+                <option value="">Citroen</option>
+                <option value="">Dodge</option>
+                <option value="">Ferrari</option>
+                <option value="">Fiat</option>
+                <option value="">Ford</option>
+                <option value="">GMC</option>
+                <option value="">Honda</option>
+                <option value="">Hyundai</option>
+                <option value="">Infiniti</option>
+                <option value="">Jaguar</option>
+                <option value="">Jeep</option>
+                <option value="">Kia</option>
+                <option value="">Koenigsegg</option>
+                <option value="">Lamborghini</option>
+                <option value="">Land Rover</option>
+                <option value="">Lexus</option>
+                <option value="">Licoln</option>
+                <option value="">Lotus</option>
+                <option value="">Masarati</option>
+                <option value="">Maybach</option>
+                <option value="">Mazda</option>
+                <option value="">McLaren</option>
+                <option value="">Mercedes</option>
+                <option value="">Mini</option>
+                <option value="">Mitsubishi</option>
+                <option value="">Nissan</option>
+                <option value="">Peugeot</option>
+                <option value="">Pontiac</option>
+                <option value="">Porsche</option>
+                <option value="">Ram</option>
+                <option value="">Renault</option>
+                <option value="">Rolls-Royce</option>
+                <option value="">Smart</option>
+                <option value="">Subaru</option>
+                <option value="">Suzuki</option>
+                <option value="">Tesla</option>
+                <option value="">Toyota</option>
+                <option value="">Volkswagen</option>
+                <option value="">Volvo</option>
+            </select>
+            <label for="car-model">Model</label>
+            <select name="car-model" id="car-model">
+                <option value="acura">Acura</option>
+            </select>
+            <label for="car-engine">Engine Size</label>
+            <select name="car-engine" id="car-engine">
+                <option value="acura">Acura</option>
+            </select>
+            <label id="price">Price</label>
+            <select name="car-price-min" id="car-price-min">
+                <option value="acura">Min</option>
+            </select>
+            <select name="car-price-max" id="car-price-max">
+                <option value="acura">Max</option>
+            </select>
+            <button id="search-btn">Search</button>
+        </aside>
+        <section>
+            <div class="jumbotron">
+                <div>
+                    <h2>30% Off All Cars!!</h2>
+                    <a href="/">Click here now</a>
+                </div>
             </div>
-        </header>
-        <div class="deals">
-            <h3>Top Deals</h3>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
+            <div class="deals">
+                <h3>Top Deals</h3>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
                     <p>Car Make and Model</p>
                     <p>Milage</p>
                     <p>Price</p>
-            </article>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
+                </article>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
                     <p>Car Make and Model</p>
                     <p>Milage</p>
                     <p>Price</p>
-            </article>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
+                </article>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
                     <p>Car Make and Model</p>
                     <p>Milage</p>
                     <p>Price</p>
-            </article>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
+                </article>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
                     <p>Car Make and Model</p>
                     <p>Milage</p>
                     <p>Price</p>
-            </article>
-        </div>
-        <div class="recent">
-            <h3>Recently Added</h3>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
-                <p>Car Make and Model</p>
-                <p>Milage</p>
-                <p>Price</p>
-            </article>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
-                <p>Car Make and Model</p>
-                <p>Milage</p>
-                <p>Price</p>
-            </article>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
-                <p>Car Make and Model</p>
-                <p>Milage</p>
-                <p>Price</p>
-            </article>
-            <article class="deal-card">
-                <img src="" width="100px" height="100px" />
-                <p>Car Make and Model</p>
-                <p>Milage</p>
-                <p>Price</p>
-            </article>
-        </div>
-        <div class="blog">
-            <h3>Blog Posts</h3>
-            <article class="blog-article">
-                <img class="blog-image" src="" width="100px" height="100px" />
-                <h4>Blog Title</h4>
-                <header>Author</header>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                    essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                    Ipsum.
-                </p>
-                <button>Read More</button>
-            </article>
-            <article class="blog-article">
-                <img class="blog-image" src="" width="100px" height="100px" />
-                <h4>Blog Title</h4>
-                <header>Author</header>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                    essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                    Ipsum.
-                </p>
-                <button>Read More</button>
-            </article>
-        </div>
-    </section>
+                </article>
+            </div>
+            <div class="recent">
+                <h3>Recently Added</h3>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
+                    <p>Car Make and Model</p>
+                    <p>Milage</p>
+                    <p>Price</p>
+                </article>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
+                    <p>Car Make and Model</p>
+                    <p>Milage</p>
+                    <p>Price</p>
+                </article>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
+                    <p>Car Make and Model</p>
+                    <p>Milage</p>
+                    <p>Price</p>
+                </article>
+                <article class="deal-card">
+                    <img src="" width="100px" height="100px" />
+                    <p>Car Make and Model</p>
+                    <p>Milage</p>
+                    <p>Price</p>
+                </article>
+            </div>
+            <div class="blog">
+                <h3>Blog Posts</h3>
+                <article class="blog-article">
+                    <img class="blog-image" src="" width="100px" height="100px" />
+                    <button id="read-btn">Read More</button>
+                    <h4>Blog Title</h4>
+                    <h6>Author</h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining
+                        essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem
+                        Ipsum.
+                    </p>
+                    
+                </article>
+                <article class="blog-article">
+                    <img class="blog-image" src="" width="100px" height="100px" />
+                    <button id="read-btn">Read More</button>
+                    <h4>Blog Title</h4>
+                    <h6>Author</h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining
+                        essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem
+                        Ipsum.
+                    </p>
+                    
+                </article>
+            </div>
+        </section>
+    </div>
     <footer>
         <h3>Footer Text</h3>
     </footer>
